@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>فروشگاه دوره های اموزشی </title>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="linear-gradient(to bottom, #61daff, #656bff)">
+   <meta name="description" content="We will simply add to cart using javascript localstorage">
+   <meta name="keywords" content="add to cart, add to cart javascript, localstorage add to cart, ecommerce shopping javascript, shopping cart demo">
+   <meta name="author" content="Nathan S.R."><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css'><link rel="stylesheet" href="css/style.css">
+<!-- font awasome -->
+<script src="https://kit.fontawesome.com/08c0b23890.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<main>
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+         <a href="login-panel.html" style="text-decoration: none;"><i class="fa-solid fa-user-plus"></i></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input style="margin-right: 200px;" class="form-control mr-xm-100 w-90" type="search" id="search_field"  placeholder="Search" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-primary my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart marginright total-count"></i>
+            </button>
+           
+<button style="margin-left:8px;" class="clear-cart btn btn-danger">Clear Cart</button>           
+           
+         </div>
+      </nav>
+
+
+<!-- slider my code artin alipour  -->
+  <!-- slider code html -->
+
+  <div class="slider">
+   <div class="list">
+       <div class="item">
+           <img src="image/Gemini_Generated_Image_imrrgsimrrgsimrr.jpg" alt="image1">
+       </div>
+       <div class="item">
+           <img src="image/Gemini_Generated_Image_5urrsr5urrsr5urr.jpg" alt="image2">
+       </div>
+       <div class="item">
+         <img src="image/Gemini_Generated_Image_363kye363kye363k.jpg" alt="image2">
+       </div>
+       <div class="item">
+         <img src="image/Gemini_Generated_Image_74ib9974ib9974ib.jpg" alt="image2">
+       </div>
+       <div class="item">
+         <img src="image/Gemini_Generated_Image_t2mf1gt2mf1gt2mf.jpg" alt="image2">
+       </div>
+   </div>
+   <!--button prev and next-->
+   <div class="buttons">
+       <button id="prev">
+           < </button>
+               <button id="next">></button>
+   </div>
+   <!--Dots (if 5 items => 5 dots)-->
+   <ul class="dots">
+       <li class="active"></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+
+   </ul>
+</div>
+
+      <section>
+         <div class="featured-area pt-100 pb-70">
+            <div class="container">
+               <div class="tab featured-tab-area">
+                  <div class="row justify-content-center">
+
+                     <div class="col-lg-4 col-md-8">
+                        <ul class="tabs active">
+                           <li class="">
+                              <a href="#">
+                                 All
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 WEBDEVELOPER
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 BACKEND
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="#">
+                                 EXTENTIONS
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div  class="tab_content current active pt-45">
+                     
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/python logo.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">PYTHON</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1200 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+
+<!-- **** IMPORTANT **** : Just add the class outofstock to those products, that are un-available, like in the example shown in the end below. Remove this class when they become available again. -->
+
+                                       <button type="button" data-name="Oxford Shirts" data-price="1200" class="default-btn border-radius-5"> Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/html logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">HTML </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                        <img src="image/css.jpg" alt="Images">
+
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">CSS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 4059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei Watch Buds" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/php.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">PHP</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>  <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/C++.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">C++</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/sowift.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">SOWIFT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                        <img src="image/ja logo.png" alt="Images">
+
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">JAVASCRIPT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 800 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Short-Sleeve Shirt" data-price="800" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                        <img src="image/react logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">REACT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 2459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Culotte dress" data-price="2459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/angular logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">ANGULAR</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                        <img src="image/node js logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">NODE JS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1999 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Fire Boltt Dazzle" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/c logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">C</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 499 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cuban Collar Shirt" data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/vs code logo.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VS CODE</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1159 </h4>
+                                       <span>(4.0)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Babydoll" data-price="1159" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/github logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">GIT HUB</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 2059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Google Pixel" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/sass.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">SASS CSS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 700 </h4>
+                                       <span>(3.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="T-shirt" data-price="700" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/git.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">GIT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 4059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Wrap around" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/codepen.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">CODEPEN</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="titan Power" data-price="459" class="outofstock default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/html logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">HTML</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1200 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oxford" data-price="1200" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/css.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">CSS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 800 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Short-Sleeve" data-price="800" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/ja logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">JAVASCRIPT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 499 </h4>
+                                       <span>(4.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cuban" data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/react logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">REACT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 700 </h4>
+                                       <span>(3.9)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="T-shirt" data-price="700" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/node js logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">NODE JS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/c logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">C</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 2459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Culotte" data-price="2459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/python logo.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">PYTHON</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1159 </h4>
+                                       <span>(4.0)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Babydoll" data-price="1159" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/git.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">GIT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 4059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Wrap" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/github logo.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">github</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 4059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/sass.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">SASS</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1999 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="FireBoltt" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                            <div class="featured-item">
+                               <div class="featured-item-img">
+                                  <a href="#">
+                                     <img src="image/vs code logo.jpg" alt="Images">
+                                  </a>
+                               </div>
+                               <div class="content">
+                                  <h3><a href="#">VS CODE</a></h3>
+                                  <hr>
+                                  <div class="content-in">
+                                     <h4>₹ 1999 </h4>
+                                     <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                  </div>
+                                  <hr>
+                                  <div class="featured-content-list">
+                                     <button type="button" data-name="FireBoltt" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/git.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">GIT</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 2059 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Google" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="image/codepen.png" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">CODEPEN</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 459 </h4>
+                                       <span>(4.4)<i class='fa fa-star' style='color:green'></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                        <button type="button" data-name="Google" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                     </div>
+                                 </div>
+                              </div>
+                           </div>
+                         
+                        </div>
+                     </div>
+
+                     <p id="not_found"></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer-section">
+         <div class="container">
+             <div class="footer-cta pt-5 pb-5">
+                 <div class="row">
+                     <div class="col-xl-4 col-md-4 mb-30">
+                         <div class="single-cta">
+                             <i class="fas fa-map-marker-alt"></i>
+                             <div class="cta-text">
+                                 <h4>Find us</h4>
+                                 <span>1010 Avenue, sw 54321, chandigarh</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-30">
+                         <div class="single-cta">
+                             <i class="fas fa-phone"></i>
+                             <div class="cta-text">
+                                 <h4>Call us</h4>
+                                 <span>9876543210 0</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-30">
+                         <div class="single-cta">
+                             <i class="far fa-envelope-open"></i>
+                             <div class="cta-text">
+                                 <h4>Mail us</h4>
+                                 <span>mail@info.com</span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="footer-content pt-5 pb-5">
+                 <div class="row">
+                     <div class="col-xl-4 col-lg-4 mb-50">
+                         <div class="footer-widget">
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                             </div>
+                             <div class="footer-text">
+                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                 elit,Lorem ipsum dolor sit amet.</p>
+                             </div>
+                             <div class="footer-social-icon">
+                                 <span>Follow us</span>
+                                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                         <div class="footer-widget">
+                             <div class="footer-widget-heading">
+                                 <h3>Useful Links</h3>
+                             </div>
+                             <ul>
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">about</a></li>
+                                 <li><a href="#">services</a></li>
+                                 <li><a href="#">portfolio</a></li>
+                                 <li><a href="#">Contact</a></li>
+                                 <li><a href="#">About us</a></li>
+                                 <li><a href="#">Our Services</a></li>
+                                 <li><a href="#">Expert Team</a></li>
+                                 <li><a href="#">Contact us</a></li>
+                                 <li><a href="#">Latest News</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                         <div class="footer-widget">
+                             <div class="footer-widget-heading">
+                                 <h3>Subscribe</h3>
+                             </div>
+                             <div class="footer-text mb-25">
+                                 <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                             </div>
+                             <div class="subscribe-form">
+                                 <form action="#">
+                                     <input type="text" placeholder="Email Address">
+                                     <button><i class="fab fa-telegram-plane"></i></button>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="copyright-area">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                         <div class="copyright-text">
+                             <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                         </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                         <div class="footer-menu">
+                             <ul>
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Terms</a></li>
+                                 <li><a href="#">Privacy</a></li>
+                                 <li><a href="#">Policy</a></li>
+                                 <li><a href="#">Contact</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+   </main>
+  
+  <script src='https://code.jquery.com/jquery-3.6.3.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js'></script><script  src="./script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
